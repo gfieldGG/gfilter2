@@ -1,0 +1,727 @@
+﻿#-------------------------------------------------------------------------------
+# Section: General
+#-------------------------------------------------------------------------------
+
+# Quest Items
+Show
+	Class == "Quest Items"
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfA.mp3" 300
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+# Quest Items
+Show
+	BaseType == "Small Soul Core"
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfA.mp3" 300
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green
+
+#-------------------------------------------------------------------------------
+# Section: Currency
+#-------------------------------------------------------------------------------
+
+# Currency Shards Junk
+Show
+	Class == "Stackable Currency"
+	BaseType == "Transmutation Shard"
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBorderColor 0 0 0 0 # Transparent Border
+	SetBackgroundColor 0 0 0 0 # Transparent Background
+
+# Early Wisdom Scroll
+Show
+	AreaLevel <= 18
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"
+	SetFontSize 41 # Big
+	SetTextColor 200 186 153 255 # Currency Text
+
+# Currency Junk
+Show
+	Class == "Stackable Currency"
+	BaseType == "Scroll of Wisdom"
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBorderColor 0 0 0 0 # Transparent Border
+	SetBackgroundColor 0 0 0 0 # Transparent Background
+
+# Currency Shards
+Show
+	Class == "Stackable Currency"
+	BaseType == "Alchemy Shard" "Annulment Shard" "Chaos Shard" "Regal Shard"
+	SetFontSize 41 # Big
+	SetTextColor 200 186 153 255 # Currency Text
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 2 White Circle
+
+# Currency T5
+Show
+	Class == "Stackable Currency"
+	BaseType == "Orb of Transmutation" "Orb of Augmentation" "Chance Shard"
+	SetFontSize 41 # Big
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBackgroundColor 35 30 20 255 # Currency Highlight Background
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 2 White Circle
+
+# Currency T4
+Show
+	Class == "Stackable Currency"
+	BaseType == "Blacksmith's Whetstone" "Armourer's Scrap"
+	SetFontSize 45 # Yuge
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBackgroundColor 35 30 20 255 # Currency Highlight Background
+	CustomAlertSound "gfT4.mp3" 150
+	MinimapIcon 1 Yellow Circle
+
+# Currency T3
+Show
+	Class == "Stackable Currency"
+	BaseType == "Vaal Orb" "Orb of Alchemy" "Chaos Orb" "Artificer's Orb" "Exalted Orb" "Arcanist's Etcher" "Regal Orb" "Glassblower's Bauble"
+	SetFontSize 45 # Yuge
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBackgroundColor 35 30 20 255 # Currency Highlight Background
+	SetBorderColor 200 186 153 255 # Currency Border
+	CustomAlertSound "gfT3.mp3" 200
+	MinimapIcon 1 Yellow Circle
+
+# Currency T2
+Show
+	Class == "Stackable Currency"
+	BaseType == "Lesser Jeweller's Orb" "Greater Jeweller's Orb" "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance" "Divine Orb" 
+	SetFontSize 45 # Yuge
+	SetTextColor 0 0 0 255 # Tier1 Text
+	SetBackgroundColor 200 186 153 255 # Currency Background
+	SetBorderColor 255 255 255 255 # Tier1 Border
+	CustomAlertSound "gfT2.mp3" 100
+	MinimapIcon 0 Yellow Circle
+
+# Currency T1
+Show
+	Class == "Stackable Currency"
+	BaseType == "Mirror Shard" "Perfect Jeweller's Orb"
+	SetFontSize 45 # Yuge
+	SetTextColor 0 0 0 255 # Tier1 Text
+	SetBackgroundColor 200 186 153 255 # Currency Background
+	SetBorderColor 255 255 255 255 # Tier1 Border
+	CustomAlertSound "gfT1.mp3" 200
+	MinimapIcon 0 Yellow Circle
+
+# Currency T0
+Show
+	Class == "Stackable Currency"
+	BaseType == "Mirror of Kalandra" "Albino Rhoa Feather"
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfT0.mp3" 300
+	MinimapIcon 0 Yellow Circle
+
+#-------------------------------------------------------------------------------
+# Subsection: Jold
+#-------------------------------------------------------------------------------
+
+# Gold stack big
+Show
+	StackSize >= 3000
+	Class == "Stackable Currency"
+	BaseType == "Gold"
+	SetTextColor 191 165 86 255 # Gold Text
+	SetBackgroundColor 89 71 31 255 # Gold Background
+	SetFontSize 41 # Big
+
+# Gold stack medium
+Show
+	StackSize >= 300
+	Class == "Stackable Currency"
+	BaseType == "Gold"
+	SetTextColor 191 165 86 255 # Gold Text
+	SetBackgroundColor 0 0 0 140 # Faded Background
+	SetFontSize 41 # Big
+
+# Gold stack small
+Show
+	StackSize >= 100
+	Class == "Stackable Currency"
+	BaseType == "Gold"
+	SetTextColor 191 165 86 255 # Gold Text
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetFontSize 37 # Medium
+
+# Gold
+Show
+	Class == "Stackable Currency"
+	BaseType == "Gold"
+	SetTextColor 191 165 86 255 # Gold Text
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetFontSize 32 # Regular
+
+#-------------------------------------------------------------------------------
+# Subsection: Essences
+#-------------------------------------------------------------------------------
+
+# Essence
+Show
+	Class == "Stackable Currency"
+	BaseType = "Essence"
+	SetTextColor 128 179 254 255 # Essence Text
+	SetBackgroundColor 25 36 51 255 # Essence Highlight Background
+	CustomAlertSound "gfNYUN.mp3" 200
+	SetFontSize 45 # Yuge
+	MinimapIcon 1 Yellow Circle
+
+#-------------------------------------------------------------------------------
+# Subsection: Distilled Emotions
+#-------------------------------------------------------------------------------
+
+# Distilled Emotion
+Show
+	Class == "Stackable Currency"
+	BaseType = "Distilled"
+	SetFontSize 45 # Yuge
+	SetTextColor 210 210 210 255 # Delirium Text
+	SetBackgroundColor 100 100 100 255 # Delirium Highlight Background
+	SetBorderColor 210 210 210 255 # Delirium Border
+	CustomAlertSound "gfT4.mp3" 150
+	MinimapIcon 1 White Circle
+	PlayEffect White Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: Catalysts
+#-------------------------------------------------------------------------------
+
+# Catalyst
+Show
+	Class == "Stackable Currency"
+	BaseType = "Catalyst"
+	SetFontSize 45 # Yuge
+	
+#-------------------------------------------------------------------------------
+# Subsection: Splinter
+#-------------------------------------------------------------------------------
+
+# Simulacrum Splinter
+Show
+	Class == "Stackable Currency"
+	BaseType == "Simulacrum Splinter"
+	SetTextColor 210 210 210 255 # Delirium Text
+	SetBackgroundColor 100 100 100 240 # Delirium Highlight Background
+	SetFontSize 45 # Yuge
+	PlayEffect White Temp
+
+# Breach Splinter
+Show
+	Class == "Stackable Currency"
+	BaseType == "Breach Splinter"
+	SetTextColor 166 95 244 255 # Breach Text
+	SetBackgroundColor 40 4 0 255 # Breach Red Highlight Background
+	SetFontSize 45 # Yuge
+
+#-------------------------------------------------------------------------------
+# Subsection: Expedition
+#-------------------------------------------------------------------------------
+
+# Expedition Artifacts
+Show
+	Class == "Stackable Currency"
+	BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact"
+	SetTextColor 122 145 191 255 # Expedition Text
+	SetBackgroundColor 40 50 60 255 # Expedition Highlight Background
+	SetFontSize 45 # Yuge
+
+# Expedition Coins
+Show
+	Class == "Stackable Currency"
+	BaseType == "Exotic Coinage"
+	SetTextColor 200 186 153 255 # Currency Text
+	SetBackgroundColor 40 50 60 255 # Expedition Highlight Background
+	SetBorderColor 200 186 153 255 # Currency Border
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfT4.mp3" 150
+	MinimapIcon 1 White Circle
+	PlayEffect White Temp
+
+#-------------------------------------------------------------------------------
+# Subsection: Misc
+#-------------------------------------------------------------------------------
+
+# wat
+Show
+	Class == "Stackable Currency"
+	SetTextColor 255 0 255 255 # wat
+	SetBackgroundColor 255 255 255 255 # Tier0 Background
+	SetBorderColor 255 0 255 255 # wat
+	SetFontSize 45 # Yuge
+	PlayAlertSound 15 300 # wat
+	MinimapIcon 0 Red Star
+
+#-------------------------------------------------------------------------------
+# Section: Gems
+#-------------------------------------------------------------------------------
+
+# Uncut Spirit Gem
+Show
+	BaseType == "Uncut Spirit Gem"
+	SetFontSize 45 # Yuge
+	SetTextColor 26 162 155 255 # Gem Text
+	SetBackgroundColor 0 25 15 255 # Gem Highlight Background
+	SetBorderColor 26 162 155 255 # Gem Border
+	CustomAlertSound "gfT3.mp3" 200
+	MinimapIcon 1 Yellow Hexagon
+
+# Uncut Skill Gem
+Show
+	BaseType == "Uncut Skill Gem"
+	SetFontSize 45 # Yuge
+	SetTextColor 26 162 155 255 # Gem Text
+	SetBackgroundColor 0 25 15 255 # Gem Highlight Background
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 1 White Hexagon
+
+# Uncut Support Gem maps
+Hide
+	BaseType == "Uncut Support Gem"
+	AreaLevel >= 65
+	SetFontSize 45 # Yuge
+	SetTextColor 26 162 155 255 # Gem Text
+
+# Uncut Support Gem
+Show
+	BaseType == "Uncut Support Gem"
+	SetFontSize 45 # Yuge
+	SetTextColor 26 162 155 255 # Gem Text
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 2 White Hexagon
+
+#-------------------------------------------------------------------------------
+# Section: Fragments
+#-------------------------------------------------------------------------------
+
+# Sanctum ascension4
+Show
+	BaseType == "Djinn Barya"
+	ItemLevel >= 75
+	SetTextColor 175 45 35 255 # Incursion Text
+	SetBackgroundColor 10 35 34 255 # Incursion Highlight Background
+	SetBorderColor 175 45 35 255 # Incursion Border
+	SetFontSize 45 # Yuge
+	PlayEffect Red Temp
+
+# Sanctum ascension3
+Show
+	BaseType == "Djinn Barya"
+	ItemLevel >= 60
+	SetTextColor 175 45 35 255 # Incursion Text
+	SetBackgroundColor 10 35 34 255 # Incursion Highlight Background
+	SetBorderColor 175 45 35 255 # Incursion Border
+	SetFontSize 45 # Yuge
+	PlayEffect Red Temp
+
+# Sanctum
+Hide
+	BaseType == "Djinn Barya"
+	SetTextColor 175 45 35 255 # Incursion Text
+	SetBackgroundColor 10 35 34 255 # Incursion Highlight Background
+	SetBorderColor 175 45 35 255 # Incursion Border
+	SetFontSize 45 # Yuge
+
+# Ultimatum ascension
+Show
+	BaseType == "Inscribed Ultimatum"
+	ItemLevel >= 75
+	SetTextColor 175 45 35 255 # Incursion Text
+	SetBackgroundColor 10 35 34 255 # Incursion Highlight Background
+	SetBorderColor 175 45 35 255 # Incursion Border
+	SetFontSize 45 # Yuge
+	PlayEffect Red Temp
+
+# Ultimatum
+Hide
+	BaseType == "Inscribed Ultimatum"
+	SetTextColor 175 45 35 255 # Incursion Text
+	SetBackgroundColor 10 35 34 255 # Incursion Highlight Background
+	SetBorderColor 175 45 35 255 # Incursion Border
+	SetFontSize 45 # Yuge
+
+# Expedition Logbook
+Show
+	Class == "Expedition Logbook"
+	SetTextColor 0 0 0 255 # Tier1 Text
+	SetBackgroundColor 122 145 191 255 # Expedition Background
+	SetBorderColor 255 255 255 255 # Tier1 Border
+	SetFontSize 45 # Yuge
+	PlayAlertSound 4 100 # Map
+	MinimapIcon 1 Yellow Square
+	PlayEffect Grey
+
+#-------------------------------------------------------------------------------
+# Section: Flasks
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Subsection: Obsolete Flasks
+#-------------------------------------------------------------------------------
+
+Hide
+	AreaLevel >= 4
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Lesser Life Flask" "Lesser Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 10
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Medium Life Flask" "Medium Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 16
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Greater Life Flask" "Greater Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 23
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Grand Life Flask" "Grand Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 30
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Giant Life Flask" "Giant Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 38
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Colossal Life Flask" "Colossal Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 50
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Gargantuan Life Flask" "Gargantuan Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Hide
+	AreaLevel >= 60
+	Class == "Life Flasks" "Mana Flasks"
+	BaseType == "Transcendent Life Flask" "Transcendent Mana Flask"
+	Rarity <= Magic
+	SetFontSize 18 # Hidden
+
+Show
+	Class == "Life Flasks" "Mana Flasks"
+
+#-------------------------------------------------------------------------------
+# Section: Uniques
+#-------------------------------------------------------------------------------
+
+Show
+	Rarity == "Unique"
+	SetFontSize 45 # Yuge
+	SetTextColor 175 96 37 255 # Unique Text
+	SetBackgroundColor 30 15 0 255 # Unique Highlight Background
+	PlayAlertSound 3 100 # Tier2
+	MinimapIcon 1 Brown Hexagon
+	PlayEffect Brown
+
+#-------------------------------------------------------------------------------
+# Section: Socketables
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Section: Runes
+#-------------------------------------------------------------------------------
+
+# Rune
+Show
+	Class == "Socketable"
+	BaseType = "Rune"
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 2 White Circle
+
+# Soul Core
+Show
+	Class == "Socketable"
+	BaseType = "Soul Core"
+	SetFontSize 45 # Yuge
+	CustomAlertSound "gfNYUN.mp3" 200
+	MinimapIcon 2 White Circle
+
+#-------------------------------------------------------------------------------
+# Subsection: Jewels
+#-------------------------------------------------------------------------------
+
+# Jewel
+Show
+	Class == "Jewels"
+	Rarity <= "Rare"
+	SetFontSize 41 # Big
+
+#-------------------------------------------------------------------------------
+# Section: Equipment
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Subsection: Sockets
+#-------------------------------------------------------------------------------
+
+# 1 Socket pre maps
+Show
+	AreaLevel < 65
+	Rarity <= "Magic"
+	Sockets > 0
+	SetBorderColor 200 186 153 255 # Currency Border
+	SetFontSize 41 # Big
+
+# 2 Sockets
+Show
+	Rarity <= "Magic"
+	Sockets >= 2
+	SetBorderColor 200 186 153 255 # Currency Border
+	SetFontSize 41 # Big
+
+#-------------------------------------------------------------------------------
+# Subsection: Rares
+#-------------------------------------------------------------------------------
+
+# Rares
+Show
+	Rarity == "Rare"
+	SetFontSize 41 # Big
+
+#-------------------------------------------------------------------------------
+# Subsection: Jewelry
+#-------------------------------------------------------------------------------
+
+# Jewelry
+Show
+	Class == "Amulet" "Ring"
+	Rarity <= "Rare"
+	SetFontSize 45 # Yuge
+
+# Belt
+Show
+	Class == "Belt"
+	Rarity <= "Rare"
+
+# Charm
+Show
+	Class == "Charm"
+	Rarity <= "Rare"
+
+#-------------------------------------------------------------------------------
+# Subsection: Obsolete Levelling Bases
+#-------------------------------------------------------------------------------
+
+Hide
+	AreaLevel >= 10
+	DropLevel <= 5
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 15
+	DropLevel <= 10
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 20
+	DropLevel <= 15
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 25
+	DropLevel <= 20
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 30
+	DropLevel <= 25
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 35
+	DropLevel <= 30
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 40
+	DropLevel <= 36
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 45
+	DropLevel <= 41
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 50
+	DropLevel <= 46
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 55
+	DropLevel <= 52
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 60
+	DropLevel < 57
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+Hide
+	AreaLevel >= 65
+	DropLevel < 59
+	Rarity <= Magic
+	Class = "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+	SetBorderColor 0 0 0 0 # No Border
+	SetFontSize 18
+	DisableDropSound
+
+
+#-------------------------------------------------------------------------------
+# Subsection: Bases to show
+#-------------------------------------------------------------------------------
+
+# Expert armour
+Show
+	BaseType = "Expert"
+	Class == "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci"
+	Rarity <= "Magic"
+	SetFontSize 32 # Regular
+
+#-------------------------------------------------------------------------------
+# Subsection: Remaining
+#-------------------------------------------------------------------------------
+
+# Normal campaign
+Show
+	AreaLevel < 65
+	Class == "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	Rarity == "Normal"
+	SetFontSize 32 # Regular
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+
+# Normal
+Hide
+	Class == "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	Rarity == "Normal"
+	SetFontSize 32 # Regular
+	SetBackgroundColor 0 0 0 0 # Hidden Background
+
+
+# Magic campaign
+Show
+	AreaLevel < 65
+	Class == "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	Rarity == "Magic"
+	SetFontSize 32 # Regular
+
+# Magic
+Hide
+	Class == "Gloves" "Boots" "Body Armour" "Helmet" "Shields" "Foci" "Quivers" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+	Rarity == "Magic"
+	SetFontSize 32 # Regular
+
+#-------------------------------------------------------------------------------
+# Section: Waystones
+#-------------------------------------------------------------------------------
+
+Show
+	Class == "Waystones"
+	SetTextColor 0 0 0 255 # Map Text
+	SetBackgroundColor 200 200 200 255 # Map White Background
+	SetBorderColor 100 100 100 255 # Map White Border
+	SetFontSize 45 # Yuge
+	PlayAlertSound 4 100 # Map
+	MinimapIcon 1 White Square
+
+Show
+	Class == "Tablet"
+	SetFontSize 45 # Yuge
+	PlayAlertSound 4 100 # Map
+	MinimapIcon 1 White Diamond
+
+Show
+	Class == "Pinnacle Keys"
+	SetFontSize 45 # Yuge
+	PlayAlertSound 4 100 # Map
+	MinimapIcon 1 Yellow Diamond
+
+#===============================================================================
+# Section: Everything else
+#===============================================================================
+
+# Everything not hidden or shown
+Show
+	SetTextColor 255 0 255 255 # wat
+	SetBackgroundColor 255 255 255 255 # Tier0 Background
+	SetBorderColor 255 0 255 255 # wat
+	SetFontSize 45 # Yuge
+	PlayAlertSound 15 300 # wat
+	MinimapIcon 0 Red Star
